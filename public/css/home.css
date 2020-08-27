@@ -1,0 +1,96 @@
+.chat {
+    width: 50rem;
+    height: 70vh;
+    box-shadow: 0 0 5px 0 #ccc;
+    border-radius: 5px;
+    display: flex;
+}
+
+.chat__members {
+    flex: .3;
+    overflow-y: auto;
+    border-right: 2px solid whitesmoke;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.chat__window {
+    flex: .7;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.chat__member {
+    cursor: pointer;
+    padding: 1rem;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.chat__member:hover, .chat__member.selected {
+    background-color: var(--primary);
+    color: white;
+    transition: all .1s;
+}
+
+.logout {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.chat__conversation {
+    flex: .9;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.chat__input {
+    flex: .1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat__input input {
+    flex: .99;
+}
+
+.chat__message-left {
+    background-color: var(--primary);
+    color: white;
+    padding: .5rem;
+    margin: .5rem 3rem .5rem 0;
+    align-self: flex-start;
+    border-radius: 5px;
+}
+
+.chat__message-right {
+    background-color: #cccccc;
+    padding: .5rem;
+    align-self: flex-end;
+    margin: .5rem 0 .5rem 3rem;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+#send_message[disabled='disabled'] {
+    background-color: #cccccc;
+}

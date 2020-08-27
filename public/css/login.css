@@ -1,0 +1,7 @@
+.login_form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-between;
+}

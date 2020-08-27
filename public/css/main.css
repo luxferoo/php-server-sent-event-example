@@ -1,0 +1,35 @@
+:root {
+    --primary: rgb(129,28,129);
+    --warning: rgb(206, 74, 18);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+input {
+    padding: 1rem .5rem;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
