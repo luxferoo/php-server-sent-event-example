@@ -5,7 +5,7 @@ JS/PHP chat app using MySQL , Server-sent events & EventSource  + MVC architectu
 
 
 ### Setup
-1 - Run the following command to create vendor & autoload file (you need to have composer installed or use composer.phar)
+1 - Run the following command to create autoload files (you need to have composer installed or use composer.phar)
 ```
  $ composer dump-autoload
 ```
