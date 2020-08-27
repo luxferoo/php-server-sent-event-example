@@ -6,10 +6,7 @@ use App\Service\Db\Connection;
 use App\Repository\Factory;
 use App\Service\View;
 
-//TODO put db information elsewhere
-$db_dsn = isset($_ENV['DB_DSN']) ? $_ENV['DB_DSN'] : "mysql:host=localhost;dbname=chatdb;";
-$db_user = isset($_ENV['DB_USER']) ? $_ENV['DB_USER'] : "root";
-$db_password = isset($_ENV['DB_PASSWORD']) ? $_ENV['DB_PASSWORD'] : null;
+require_once PROJECT_ROOT.'/config/db.php';
 
 IoC::getInstance()
     ->register("router", function () {
