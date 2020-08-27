@@ -1,6 +1,6 @@
 # php-server-sent-event-example 
 
-JS/PHP chat app using MySQL , Server-sent events & EventSource
+JS/PHP chat app using MySQL , Server-sent events & EventSource  + MVC architecture
 ![screen-capture (1)](https://user-images.githubusercontent.com/17208637/91446718-b68e1480-e86f-11ea-8c62-aa22f91dc83c.gif)
 
 
